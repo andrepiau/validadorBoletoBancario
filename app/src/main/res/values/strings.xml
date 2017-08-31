@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ValidaBoleto</string>
+    <string name="validar">Validar</string>
+    <string name="linhaDigitavel">linha digitável (47 carác.)</string>
+    <string name="boleto">boleto (44 carác.)</string>
+    <string name="digite_boleto_linha_digitavel">digite o boleto ou a linha digitável</string>
+    <string name="titulo">validador de boleto</string>
+
+</resources>

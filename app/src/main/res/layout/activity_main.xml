@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_9fa8da"
+    android:orientation="vertical"
+    tools:context="com.example.andrepv.validaboleto.MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/titulo"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textview_barcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/title"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:maxLength="48"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:text="@string/digite_boleto_linha_digitavel"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/edittext_barcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textview_barcode"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:digits="1234567890"
+        android:inputType="phone"
+        android:maxLength="47" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/toggle_linha_digitavel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/edittext_barcode"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="80dp"
+        android:checked="true"
+        android:text="@string/linhaDigitavel"
+        android:textAllCaps="true"
+        android:textSize="20sp" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/toggle_boleto_comum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/toggle_linha_digitavel"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:checked="true"
+        android:text="@string/boleto"
+        android:textAllCaps="true"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button_validar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/toggle_boleto_comum"
+        android:layout_marginBottom="21dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/validar"
+        android:textAllCaps="true"
+        android:textSize="24sp" />
+</RelativeLayout>
